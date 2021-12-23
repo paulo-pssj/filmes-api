@@ -9,7 +9,6 @@ class Command(BaseCommand):
         
     def handle(self, *args, **options):
         if options.get("drop_all"):
-            self.warn("Apangando registros")
             Filme.objects.all().delete()
         
         
