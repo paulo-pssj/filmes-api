@@ -5,3 +5,4 @@ from filme.models import Filme
 class FilmeViewSet(viewsets.ModelViewSet):
     queryset = Filme.objects.all()
     serializer_class = FilmeSerializer
+    http_method_names = ['get']
